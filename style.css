@@ -1,0 +1,122 @@
+/* Include the padding and border in an element's total width and height */
+body {
+    margin: 0;
+    min-width: 250px;
+    background: #E5E6EA;
+    font-family: 'Poppins';
+    font-size: 22px;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  h3 {
+    padding: 30px 20px;
+}
+
+.header {
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  background: #E5E6EA;
+}
+.addBtn {
+  padding: 18px;
+  width: 20%;
+  background: #ffffff;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  border-radius: 131px;
+  margin-left: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input {
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  border-radius: 40px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+li {
+  list-style: none;
+  background: white;
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+ul#myUL {
+  padding: 0 !IMPORTANT;
+}
+
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #fff !IMPORTANT;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .checked{
+    background: #B8E2F6 !important;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding:8px 0px 0px 8px;
+    border: 3px solid #B8E2F6;      
+    border-radius:30px;             
+    margin-right:20px;
+    margin-top:15px;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
